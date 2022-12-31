@@ -1,0 +1,140 @@
+/**/
+html {
+  background-image: url(/images/starsbkg.jpg);
+  background-repeat: repeat;
+  font-family: "Audiowide", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+#bck{
+
+background-size: 100%;
+ 
+}
+/* PORTRAIT */
+@media only screen and (max-width: 844px) and (orientation: portrait) {
+  header {
+    grid-area: header;
+    width: 100%;
+    border-bottom: 3px solid darkred;
+    color: gainsboro;
+    background-color: black;
+  }
+  .btnplanet {
+    padding: 20px 35px 20px 35px; /*top right bottom left*/
+    width: 200px;
+    height: 80px;
+    background-color: darkred;
+    background-blend-mode: darken;
+    color: white;
+    font-family: "Audiowide", sans-serif;
+  }
+
+  .btnarea {
+    grid-area: btn;
+    margin: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .savedlist {
+    grid-area: list;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid darkred;
+    color: white;
+  }
+  footer {
+    color: gainsboro;
+    grid-area: footer;
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    border-top: 3px solid darkred;
+  }
+  .gridcont {
+    display: grid;
+    grid-template-areas:
+      "header "
+      "btn"
+      "list"
+      "footer ";
+  }
+
+  .gridarea {
+    display: grid;
+    gap: 30px 10px;
+  }
+
+  .container {
+    background-color: #e7e9eb;
+    border-width: 20px;
+    border-color: darkred;
+    opacity: 50%;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 50px 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16),
+      0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+  }
+}
+
+/*LANDSCAPE*/
+@media only screen and (min-width: 390px) and (orientation: landscape) {
+  header {
+    grid-area: header;
+    width: 100%;
+    border-bottom: 5px solid darkred;
+    color: gainsboro;
+    background-color: black;
+  }
+  .btnplanet {
+    padding: 20px 35px 20px 35px; /*top right bottom left*/
+    width: 200px;
+    height: 80px;
+    background-color: darkred;
+    background-blend-mode: darken;
+    color: white;
+    font-family: "Audiowide", sans-serif;
+  }
+  .btnarea {
+    grid-area: btn;
+    margin: 15px 5px 5px 5px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .savedlist {
+    grid-area: list;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(0, 0, 0);
+    border: 5px solid darkred;
+    color: white;
+  }
+  footer {
+    color: gainsboro;
+    grid-area: footer;
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    border-top: 5px solid darkred;
+  }
+  .gridcont {
+    display: grid;
+    grid-template-areas:
+      "header header header header header"
+      "btn btn list list list"
+      "footer footer footer footer footer";
+  }
+}
